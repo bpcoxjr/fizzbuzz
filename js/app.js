@@ -13,13 +13,17 @@ $(document).ready(function(){
 		$('.user-input').val ("")
 		}
 	});
+	$('.clear').on('click', function(){
+		$('#text').empty();
+		$('.user-input').val("");
+	});
 });
 
 
 
 
-function fizzbuzz(i) {
-for (i = 1; i <= 100; i++) {
+function fizzbuzz(max) {
+for (i = 1; i <= max; i++) {
 	console.log(i);
 if (i % 15 == 0) {
     console.log("FizzBuzz");
